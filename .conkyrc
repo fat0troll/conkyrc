@@ -88,7 +88,7 @@ ${execi 300 cp -f ~/.harmattan-assets/icons/small-white/$(grep "yweather:forecas
 ${execi 300 cp -f ~/.harmattan-assets/icons/small-white/$(grep "yweather:forecast" ~/.cache/weather.xml | grep -o "code=\"[^\"]*\"" | grep -o "\"[^\"]*\"" | grep -o "[^\"]*" | awk 'NR==2').png ~/.cache/weather-2.png}${image ~/.cache/weather-2.png -p 118,296 -s 32x32}\
 ${execi 300 cp -f ~/.harmattan-assets/icons/small-white/$(grep "yweather:forecast" ~/.cache/weather.xml | grep -o "code=\"[^\"]*\"" | grep -o "\"[^\"]*\"" | grep -o "[^\"]*" | awk 'NR==3').png ~/.cache/weather-3.png}${image ~/.cache/weather-3.png -p 194,296 -s 32x32}${font}\
 # Stocks section (aka Russian Zen) #
-${voffset 148}${goto 30}${execpi 60 ~/.conky-stocks.sh header}
+${voffset 152}${goto 30}${execpi 60 ~/.conky-stocks.sh header}
 ${goto 30}${execpi 60 ~/.conky-stocks.sh quote RUB=X}
 ${goto 30}${execpi 60 ~/.conky-stocks.sh quote EURRUB=X}
 ${goto 30}${execpi 60 ~/.conky-stocks.sh quote CNYRUB=X}
